@@ -94,9 +94,10 @@ namespace EmployeeOOP.Classes
             //var dateConcatenated1 = _day + "/" + _month + "/" + _year; //esta es la mas Vieja
             //var dateConcatenated2 = $"{_day:00}/{_month:00}/{_year:0000}";  //esta es Interpolacion
 
-            var dateConcatenated3= String.Format("{0:00}/{1:00}/{2:0000}", _day, _month, _year); //Class String.Format
+            var dateConcatenated3 = String.Format("{0:00}/{1:00}/{2:0000}", _day, _month, _year); //Class String.Format
             return dateConcatenated3;
         }
+
 
         #endregion
     }
