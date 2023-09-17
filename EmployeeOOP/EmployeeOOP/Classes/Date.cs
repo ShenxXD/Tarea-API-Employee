@@ -49,7 +49,8 @@ namespace EmployeeOOP.Classes
 
         private int ValidateDay(int day, int month, int year)
         {
-            if (month == 2 && day == 29 && IsLeapYear(year))
+            //Válido para  si el día  ingresado pertenece a un año bisiesto
+            if (month == 2 && day == 29 && IsLeapYear(year))    //29/2/2023
             {
                 return day;
             }
@@ -68,6 +69,7 @@ namespace EmployeeOOP.Classes
             }
             else
             {
+                    //exception creation
                 throw new DayException(String.Format("El dia {0} no es valido para el mes {1}. ", day, month));
             }
         }
