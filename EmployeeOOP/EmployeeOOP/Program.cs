@@ -33,7 +33,7 @@ try
     Console.Write("Ingresar apellidos: ");
     lastName = Console.ReadLine();
 
-    //
+    //Salary Employee
 
     Console.Write("Ingresar salario: ");
     salary = Decimal.Parse(Console.ReadLine());
@@ -49,6 +49,7 @@ try
         Salary = salary,
     };
     //Console.WriteLine("\nSalary Employee:\n");
+    Console.WriteLine("\n");
     Console.WriteLine(salaryEmployee.ToString());
 
     //Hourly Employee
@@ -72,6 +73,7 @@ try
     };
 
     //Console.WriteLine("\nHourly Employee:\n");
+    Console.WriteLine("\n");
     Console.WriteLine(hourlyEmployee.ToString());
 
     Console.WriteLine("\n");
@@ -97,11 +99,12 @@ try
     };
 
     //Console.WriteLine("\nComission Employee:\n");
+    Console.WriteLine("\n");
     Console.WriteLine(comissionEmployee.ToString());
 
     Console.WriteLine("\n");
 
-
+    //BaseComission Employee
 
     Console.Write("Ingresar pago base: ");
     baseValue = Decimal.Parse(Console.ReadLine());
@@ -120,6 +123,7 @@ try
     };
 
     //Console.WriteLine("\nBase Comission Employee:\n");
+    Console.WriteLine("\n");
     Console.WriteLine(baseComissionEmployee.ToString());
 
  
