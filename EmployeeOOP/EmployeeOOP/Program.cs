@@ -119,7 +119,7 @@ try
         IsActive = true,
         Sales = sales,
         ComissionPercentaje = comission,
-        Base = baseValue,
+        BaseC = baseValue,
     };
 
     //Console.WriteLine("\nBase Comission Employee:\n");

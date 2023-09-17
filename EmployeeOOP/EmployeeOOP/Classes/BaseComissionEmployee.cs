@@ -4,7 +4,7 @@
     {
         #region Properties
 
-        public decimal Base { get; set; }
+        public decimal BaseC { get; set; }
 
         #endregion
 
@@ -14,13 +14,13 @@
 
         public override decimal GetValueToPay()
         {
-            return ((ComissionPercentaje / 100) * Sales) + Base;
+            return ((ComissionPercentaje / 100) * Sales) + BaseC;
         }
 
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"Valor a Pagar Total: {((ComissionPercentaje / 100) * Sales) + Base:C2}\n\t";
+                $"El valor a pagar es: {((ComissionPercentaje / 100) * Sales) + BaseC:C2}\n\t";
         }
 
         #endregion

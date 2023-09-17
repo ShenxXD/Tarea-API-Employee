@@ -22,7 +22,7 @@
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"Valor a Pagar por Comisiones: {(ComissionPercentaje / 100) * Sales:C2}\n\t";
+                $"El valor a Pagar por Comisiones es: {(ComissionPercentaje / 100) * Sales:C2}\n\t";
         }
 
         #endregion
