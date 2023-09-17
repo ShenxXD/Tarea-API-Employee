@@ -20,7 +20,7 @@
 
         public override string ToString()
         {
-            return $"INFORMACION EMPLEADO\n\t" +
+            return $"INFORMACION DEL EMPLEADO\n\t" +
                 $"ID: {Id}\n\t" +
                 $"Nombres: {FirstName}\n\t" +
                 $"Apellidos: {lastName}\n\t" +
