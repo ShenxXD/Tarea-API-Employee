@@ -4,7 +4,7 @@
     {
         #region Properties
 
-        public decimal HourValue { get; set; }
+        public decimal HourV { get; set; }
 
         public int Hours { get; set; }
 
@@ -16,13 +16,13 @@
 
         public override decimal GetValueToPay()
         {
-            return HourValue * Hours;
+            return HourV * Hours;
         }
 
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"Valor a Pagar: {HourValue * Hours:C2}\n\t";
+                $"El valor a pagar es: {HourV * Hours:C2}\n\t";
         }
 
         #endregion

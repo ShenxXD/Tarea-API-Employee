@@ -8,10 +8,10 @@ try
 {
     int day, month, year, hours;
     string firstName, lastName;
-    decimal salary, hourValue, comission, sales, baseValue;
+    decimal salary, hourValue, comission, sales, baseV;
 
-    Console.WriteLine("OOP Application-Web");
-    Console.WriteLine("--------------------------\n");
+    Console.WriteLine("OOP APP-WEB");
+    Console.WriteLine("------------------------------\n");
 
     Console.Write("Ingresar el día: ");
     day = Convert.ToInt32(Console.ReadLine());
@@ -33,6 +33,7 @@ try
     Console.Write("Ingresar apellidos: ");
     lastName = Console.ReadLine();
 
+
     //Salary Employee
 
     Console.Write("Ingresar salario: ");
@@ -48,9 +49,11 @@ try
         IsActive = true,
         Salary = salary,
     };
-    //Console.WriteLine("\nSalary Employee:\n");
+   
     Console.WriteLine("\n");
     Console.WriteLine(salaryEmployee.ToString());
+
+
 
     //Hourly Employee
 
@@ -68,15 +71,17 @@ try
         BirthDate = dateObject,
         HiringDate = dateObject,
         IsActive = true,
-        HourValue = hourValue,
+        HourV = hourValue,
         Hours = hours,
     };
 
-    //Console.WriteLine("\nHourly Employee:\n");
+    
     Console.WriteLine("\n");
     Console.WriteLine(hourlyEmployee.ToString());
 
     Console.WriteLine("\n");
+
+
 
     //Comission Employee
 
@@ -98,16 +103,17 @@ try
         ComissionPercentaje = comission,
     };
 
-    //Console.WriteLine("\nComission Employee:\n");
+
     Console.WriteLine("\n");
     Console.WriteLine(comissionEmployee.ToString());
 
     Console.WriteLine("\n");
 
+
     //BaseComission Employee
 
     Console.Write("Ingresar pago base: ");
-    baseValue = Decimal.Parse(Console.ReadLine());
+    baseV = Decimal.Parse(Console.ReadLine());
 
     BaseComissionEmployee baseComissionEmployee = new BaseComissionEmployee()
     {
@@ -119,10 +125,10 @@ try
         IsActive = true,
         Sales = sales,
         ComissionPercentaje = comission,
-        BaseC = baseValue,
+        BaseC = baseV,
     };
 
-    //Console.WriteLine("\nBase Comission Employee:\n");
+  
     Console.WriteLine("\n");
     Console.WriteLine(baseComissionEmployee.ToString());
 
